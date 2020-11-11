@@ -1,8 +1,1 @@
-hello world
-
-
-
-:"::":":"
-chanasdf;laksjd;flakjs
-
-asdf;laksjdf;
+### Let's practice Aagorighm!
