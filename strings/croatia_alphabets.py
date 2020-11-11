@@ -18,23 +18,7 @@ def get_word_recursively(words, alphabet, count, length):
     else:
         return count, length
 
-# def main():
-#   words = input().strip()
 
-#    croatia_alphabets = get_croatia_alphabets()
-
-#    count = 0
-#    length = 0
-
-#    for alphabet in croatia_alphabets:
-#        c, l = get_word_recursively(words, alphabet, 0, 0)
-#        print(alphabet, c, l)
-#        count += c
-#        length += l
-
-#    len_of_words = count + len(words) - length
-
-#    print(len_of_words)
 def main():
     words = input().strip()
 
@@ -56,6 +40,19 @@ def main():
     print(len(words))
 
 
-main()
+# main()
+
+def init():
+    croatia_alphabets = get_croatia_alphabets()
+
+    strings = input()
+
+    for croatia_alphabet in croatia_alphabets:
+        strings = strings.replace(croatia_alphabet, '*')
+
+    print(len(strings))
+
+
+init()
 
 # ljes=njak
