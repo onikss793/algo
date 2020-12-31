@@ -12,7 +12,7 @@ def is_under_forty(number):
 
 
 def get_score(number):
-    return number if not is_under_forty(number) else 40
+    return number if is_under_forty(number) is False else 40
 
 
 def main():

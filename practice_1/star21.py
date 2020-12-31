@@ -22,7 +22,7 @@ def draw_even(num):
     array = []
 
     for n in range(1, num + 1):
-        array.append(1) if not is_odd(n) else array.append(0)
+        array.append(1) if is_odd(n) is False else array.append(0)
 
     print(''.join(map(draw_star, array)))
 

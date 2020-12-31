@@ -8,9 +8,9 @@ def isNumUnsigned(num):
 
 if isNumUnsigned(x) and isNumUnsigned(y):
     print(1)
-elif not isNumUnsigned(x) and isNumUnsigned(y):
+elif isNumUnsigned(x) is False and isNumUnsigned(y):
     print(2)
-elif not isNumUnsigned(x) and not isNumUnsigned(y):
+elif isNumUnsigned(x) is False and isNumUnsigned(y) is False:
     print(3)
-elif isNumUnsigned(x) and not isNumUnsigned(y):
+elif isNumUnsigned(x) and isNumUnsigned(y) is False:
     print(4)

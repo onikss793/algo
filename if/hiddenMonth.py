@@ -10,4 +10,8 @@ def getNumMultiple(subject):
 
 isYearMultipleOf = getNumMultiple(year)
 
-print(1 if (isYearMultipleOf(4) and not isYearMultipleOf(100)) or (isYearMultipleOf(400)) else 0)
+print(
+    1
+    if (isYearMultipleOf(4) and isYearMultipleOf(100)) is False or (isYearMultipleOf(400))
+    else 0
+)
