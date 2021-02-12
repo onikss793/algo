@@ -1,1 +1,1 @@
-### Let's practice Aagorighm!
+### Let's practice Algorithm!
