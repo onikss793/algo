@@ -15,6 +15,39 @@
 이미 정렬된 배열에 대해서는 오히려 수행시간이 더 많이 걸릴 수 있다. 
 """
 
+
+def main():
+    n = int(input())
+    arr = []
+
+    for _ in range(n):
+        arr.append(int(input()))
+
+    def quick_sort(start, end):
+        if start >= end:
+            return
+
+        key, i, j = start, start + 1, end
+
+        while i <= j:
+            while i <= end and arr[key] >= arr[i]:
+                i += 1
+            while j > start and arr[key] <= arr[j]:
+                j -= 1
+
+            if i > j:
+                arr[key], arr[j] = arr[j], arr[key]
+            else:
+                arr[i], arr[j] = arr[j], arr[i]
+
+    quick_sort(0, n - 1)
+
+    [print(n, end=' ') for n in arr]
+    print('\n')
+
+
+main()
+
 # def quick_sort(arr):
 #     if len(arr) <= 1:
 #         return arr
@@ -33,34 +66,34 @@
 #     return quick_sort(lesser_arr) + equal_arr + quick_sort(greater_arr)
 
 
-def quick_sort(arr) -> list:
-    def sort(low: int, high: int):
-        if high <= low:
-            return
-
-        mid = partition(low, high)
-        sort(low, mid - 1)
-        sort(mid, high)
-
-    def partition(low: int, high: int) -> int:
-        pivot = arr[(low + high) // 2]
-
-        while low <= high:
-            while arr[low] < pivot:
-                low += 1
-            while arr[high] > pivot:
-                high -= 1
-            if low <= high:
-                arr[low], arr[high] = arr[high], arr[low]
-                low, high = low + 1, high - 1
-        return low
-
-    sort(0, len(arr) - 1)
-
-    return arr
-
-
-arr = [6, 5, 1, 4, 7, 2, 3]
+# def quick_sort(arr) -> list:
+#     def sort(low: int, high: int):
+#         if high <= low:
+#             return
+#
+#         mid = partition(low, high)
+#         sort(low, mid - 1)
+#         sort(mid, high)
+#
+#     def partition(low: int, high: int) -> int:
+#         pivot = arr[(low + high) // 2]
+#
+#         while low <= high:
+#             while arr[low] < pivot:
+#                 low += 1
+#             while arr[high] > pivot:
+#                 high -= 1
+#             if low <= high:
+#                 arr[low], arr[high] = arr[high], arr[low]
+#                 low, high = low + 1, high - 1
+#         return low
+#
+#     sort(0, len(arr) - 1)
+#
+#     return arr
+#
+#
+# arr = [6, 5, 1, 4, 7, 2, 3]
 # [3, 5, 1, 4, 7, 2, 6]
 # [3, 2, 1, 4, 7, 5, 6]
 # [3, 2, 1] [4, 7, 5, 6]
@@ -73,5 +106,5 @@ arr = [6, 5, 1, 4, 7, 2, 3]
 # [6] [7]
 # [1, 2, 3, 4, 5, 6, 7]
 
-result = quick_sort(arr)
-print(result)
+# result = quick_sort(arr)
+# print(result)
