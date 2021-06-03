@@ -43,8 +43,6 @@ def bfs_recursive(graph, queue: Queue, path):
         return
 
     node = queue.get()
-    
-    
 
 
 if __name__ == "__main__":
