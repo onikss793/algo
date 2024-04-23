@@ -1,5 +1,5 @@
-mod contains_nearby_duplicate;
+mod longest_consecutive;
 
 fn main() {
-    contains_nearby_duplicate::main();
+    longest_consecutive::main();
 }

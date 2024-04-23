@@ -1,7 +1,7 @@
-import containsNearByDuplicate from './containsNearByDuplicate';
+import longestConsecutive from './longestConsecutive';
 
 function main() {
-  containsNearByDuplicate();
+  longestConsecutive();
 }
 
 void main();
