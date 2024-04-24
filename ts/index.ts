@@ -1,7 +1,7 @@
-import longestConsecutive from './longestConsecutive';
+import summaryRanges from './summaryRanges';
 
 function main() {
-  longestConsecutive();
+  summaryRanges();
 }
 
 void main();
