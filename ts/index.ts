@@ -1,7 +1,7 @@
-import summaryRanges from './summaryRanges';
+import findMinArrowShots from './findMinArrowShots';
 
 function main() {
-  summaryRanges();
+  findMinArrowShots();
 }
 
 void main();

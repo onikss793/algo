@@ -1,8 +1,8 @@
 use std::env;
 
-mod summary_ranges;
+mod find_min_arrow_shots;
 
 fn main() {
     env::set_var("RUST_BACKTRACE", "1");
-    summary_ranges::main();
+    find_min_arrow_shots::main();
 }
