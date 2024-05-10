@@ -1,8 +1,8 @@
 use std::env;
 
-mod find_min_arrow_shots;
+mod is_valid_parentheses;
 
 fn main() {
     env::set_var("RUST_BACKTRACE", "1");
-    find_min_arrow_shots::main();
+    is_valid_parentheses::main();
 }

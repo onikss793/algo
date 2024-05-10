@@ -1,7 +1,7 @@
-import findMinArrowShots from './findMinArrowShots';
+import isValidParentheses from './isValidParentheses';
 
 function main() {
-  findMinArrowShots();
+  isValidParentheses();
 }
 
 void main();
