@@ -1,7 +1,7 @@
-import isValidParentheses from './isValidParentheses';
+import simplifyPath from './simplifyPath';
 
 function main() {
-  isValidParentheses();
+  simplifyPath();
 }
 
 void main();
